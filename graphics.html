@@ -1,0 +1,22 @@
+<html >
+<head>
+  <title>Test | HTML Graphics</title>
+</head>
+
+<body>
+  <p><h3>HTML Graphics</h3></p>
+        <p>Canvas with a circle drawn inside</p>
+        <canvas id="mycanvas"height="100"width="150"style="border:solid black 1px"></canvas>
+        <script>
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(70,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script>
+        <p>SVG with a circle drawn inside</p>
+        <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+</body>
+</html>
